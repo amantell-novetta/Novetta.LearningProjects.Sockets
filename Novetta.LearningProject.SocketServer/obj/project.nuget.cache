@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZTIeH0PBpHt3ipbYUapl6mYeNhN9cbrCl1l6jZ+CJ9jmtfGrlhGeIcDrY5EjjwLA7QObuinH7sBqAT/8qX8L2A==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Novetta.LearningProject.Sockets\\Novetta.LearningProject.SocketServer\\Novetta.LearningProject.SocketServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adam_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\adam_\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\adam_\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\adam_\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
