@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CxbnLGoKtsjifkphty0vLmNO+KQLbmw+sTmAHPsYGZCC1zAFE/h3ETyMrDBLcf00ct2UinKv0pYuzY98xPzVoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Novetta.LearningProject.Sockets\\Novetta.LearningProject.DeparturesSocket\\Novetta.LearningProject.DeparturesSocket.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adam_\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\adam_\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\adam_\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

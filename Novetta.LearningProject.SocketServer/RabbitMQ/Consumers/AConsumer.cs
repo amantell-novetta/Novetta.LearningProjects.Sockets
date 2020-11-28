@@ -13,25 +13,25 @@ namespace Novetta.LearningProject.SocketServer.RabbitMQ.Consumers
 {
     public abstract class AConsumer
     {
-        //protected IConnection InitConnection()
-        //{
-        //    var factory = new ConnectionFactory()
-        //    {
-        //        HostName = "127.0.0.1",
-        //        UserName = "guest",
-        //        Password = "guest",
-        //        Port = 5672,
-        //        VirtualHost = "/",
-        //    };
+        protected IConnection InitConnection()
+        {
+            var factory = new ConnectionFactory()
+            {
+                HostName = "127.0.0.1",
+                UserName = "guest",
+                Password = "guest",
+                Port = 5672,
+                VirtualHost = "/",
+            };
 
-        //    var conn = factory.CreateConnection();
-        //    return conn;
-        //}
+            var conn = factory.CreateConnection();
+            return conn;
+        }
 
-        //protected abstract IModel InitChannel(IConnection conn);
+        protected abstract IModel InitChannel(IConnection conn);
 
-        //protected abstract EventingBasicConsumer InitConsumer(IModel channel);
+        protected abstract EventingBasicConsumer InitConsumer(IModel channel);
 
-        //public abstract Task PushAsync(HttpContext context, WebSocket webSocket);
+        public abstract Task PushAsync(HttpContext context, WebSocket webSocket);
     }
 }

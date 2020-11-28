@@ -5,10 +5,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Novetta.LearningProject.SocketServer.Handlers;
 using Novetta.LearningProject.SocketServer.RabbitMQ.Consumers;
 using System.Net.WebSockets;
 
@@ -42,23 +38,14 @@ namespace Novetta.LearningProject.SocketServer
                 KeepAliveInterval = TimeSpan.FromSeconds(120),
                 ReceiveBufferSize = 4 * 1024
             };
-            //webSocketOptions.AllowedOrigins.Add("https://client.com");
-            //webSocketOptions.AllowedOrigins.Add("https://www.client.com");
 
             app.UseWebSockets(webSocketOptions);
 
+            #region
             app.Use(async (context, next) =>
             {
-
-                Console.WriteLine("entered context.");
-
-
                 if (context.Request.Path == "/push")
                 {
-
-                    Console.WriteLine("entered path.");
-
-
                     if (context.WebSockets.IsWebSocketRequest)
                     {
                         WebSocket webSocket = await context.WebSockets.AcceptWebSocketAsync();
@@ -66,7 +53,7 @@ namespace Novetta.LearningProject.SocketServer
                         try
                         {
                             var handler = app.ApplicationServices.GetRequiredService<Novetta.LearningProject.SocketServer.RabbitMQ.Consumers.AConsumer>();
- //                           await handler.PushAsync(context, webSocket);
+                            await handler.PushAsync(context, webSocket);
                         }
                         catch (Exception ex)
                         {
@@ -83,7 +70,7 @@ namespace Novetta.LearningProject.SocketServer
                     await next();
                 }
             });
-
+            #endregion
             app.UseFileServer();
         }
     }
