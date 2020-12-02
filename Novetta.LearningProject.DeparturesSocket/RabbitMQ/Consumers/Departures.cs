@@ -62,8 +62,8 @@ namespace Novetta.LearningProject.DeparturesSocket.RabbitMQ.Consumers
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     var routingKey = ea.RoutingKey;
-                    Console.WriteLine(" [x] Received '{0}':'{1}'....",
-                                      routingKey, message.Substring(0, 10));
+                    //Console.WriteLine(" [x] Received '{0}':'{1}'....",
+                    //                  routingKey, message.Substring(0, 10));
 
                     byte[] output = Encoding.UTF8.GetBytes(message);
 
@@ -71,6 +71,7 @@ namespace Novetta.LearningProject.DeparturesSocket.RabbitMQ.Consumers
 
                     if (_sockets.TryGetValue(key, out var ws) && ws.State == WebSocketState.Open)
                     {
+                        Console.WriteLine("sent");
                         await ws.SendAsync(new ArraySegment<byte>(output, 0, output.Length), WebSocketMessageType.Text, true, CancellationToken.None);
                     }
                     else
@@ -82,8 +83,8 @@ namespace Novetta.LearningProject.DeparturesSocket.RabbitMQ.Consumers
                                      autoAck: true,
                                      consumer: consumer);
 
-                Console.WriteLine(" Press [enter] to exit.");
-                Console.ReadLine();
+                //Console.WriteLine(" Press [enter] to exit.");
+                //Console.ReadLine();
 
             };
 

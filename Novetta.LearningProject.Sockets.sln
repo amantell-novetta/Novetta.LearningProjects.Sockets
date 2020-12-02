@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novetta.LearningProject.SocketServer", "Novetta.LearningProject.SocketServer\Novetta.LearningProject.SocketServer.csproj", "{0853B285-41A2-43CA-8C50-9C49FCBCF75C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novetta.LearningProject.ArrivalsSocket", "Novetta.LearningProject.ArrivalsSocket\Novetta.LearningProject.ArrivalsSocket.csproj", "{D6EF10A4-5A83-4E5D-ADFC-B859A4FE7827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novetta.LearningProject.ArrivalsSocket", "Novetta.LearningProject.ArrivalsSocket\Novetta.LearningProject.ArrivalsSocket.csproj", "{D6EF10A4-5A83-4E5D-ADFC-B859A4FE7827}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novetta.LearningProject.DeparturesSocket", "Novetta.LearningProject.DeparturesSocket\Novetta.LearningProject.DeparturesSocket.csproj", "{AA7FCE4E-B3EE-4470-908C-9C9DBD954D11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novetta.LearningProject.DeparturesSocket", "Novetta.LearningProject.DeparturesSocket\Novetta.LearningProject.DeparturesSocket.csproj", "{AA7FCE4E-B3EE-4470-908C-9C9DBD954D11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0853B285-41A2-43CA-8C50-9C49FCBCF75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0853B285-41A2-43CA-8C50-9C49FCBCF75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0853B285-41A2-43CA-8C50-9C49FCBCF75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0853B285-41A2-43CA-8C50-9C49FCBCF75C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6EF10A4-5A83-4E5D-ADFC-B859A4FE7827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6EF10A4-5A83-4E5D-ADFC-B859A4FE7827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6EF10A4-5A83-4E5D-ADFC-B859A4FE7827}.Release|Any CPU.ActiveCfg = Release|Any CPU

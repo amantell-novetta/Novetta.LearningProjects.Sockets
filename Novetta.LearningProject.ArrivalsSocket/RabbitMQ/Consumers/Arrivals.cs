@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Novetta.LearningProject.ArrivalsSocket.RabbitMQ.Consumers
 {
@@ -62,15 +63,16 @@ namespace Novetta.LearningProject.ArrivalsSocket.RabbitMQ.Consumers
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     var routingKey = ea.RoutingKey;
-                    Console.WriteLine(" [x] Received '{0}':'{1}'....",
-                                      routingKey, message.Substring(0, 10));
+                    //Console.WriteLine(" [x] Received '{0}':'{1}'....",
+                    //                  routingKey, message.Substring(0, 10));
 
-                    byte[] output = Encoding.UTF8.GetBytes(message);
+                    byte[] output = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(message));
 
                     var key = _sockets.Keys.ToList()[0];
 
                     if (_sockets.TryGetValue(key, out var ws) && ws.State == WebSocketState.Open)
                     {
+                        Console.WriteLine("sent");
                         await ws.SendAsync(new ArraySegment<byte>(output, 0, output.Length), WebSocketMessageType.Text, true, CancellationToken.None);
                     }
                     else
@@ -82,9 +84,8 @@ namespace Novetta.LearningProject.ArrivalsSocket.RabbitMQ.Consumers
                                      autoAck: true,
                                      consumer: consumer);
 
-                Console.WriteLine(" Press [enter] to exit.");
-                Console.ReadLine();
-
+                //Console.WriteLine(" Press [enter] to exit.");
+                //Console.ReadLine();
             };
 
             return consumer;

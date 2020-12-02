@@ -44,7 +44,7 @@ namespace Novetta.LearningProject.DeparturesSocket
             #region
             app.Use(async (context, next) =>
             {
-                if (context.Request.Path == "/arrivals")
+                if (context.Request.Path == "/departures")
                 {
                     if (context.WebSockets.IsWebSocketRequest)
                     {

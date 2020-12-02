@@ -21,3 +21,4 @@ C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.ArrivalsSock
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.ArrivalsSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.ArrivalsSocket.dll
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.ArrivalsSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.ArrivalsSocket.pdb
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.ArrivalsSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.ArrivalsSocket.genruntimeconfig.cache
+C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.ArrivalsSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.ArrivalsSocket.csprojAssemblyReference.cache

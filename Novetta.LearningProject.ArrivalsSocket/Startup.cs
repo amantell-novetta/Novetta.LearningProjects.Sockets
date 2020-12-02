@@ -44,11 +44,17 @@ namespace Novetta.LearningProject.ArrivalsSocket
             #region
             app.Use(async (context, next) =>
             {
+                Console.WriteLine("context");
+
                 if (context.Request.Path == "/arrivals")
                 {
+                    Console.WriteLine("arrivals");
+
                     if (context.WebSockets.IsWebSocketRequest)
                     {
                         WebSocket webSocket = await context.WebSockets.AcceptWebSocketAsync();
+
+                        Console.WriteLine("websocket");
 
                         try
                         {

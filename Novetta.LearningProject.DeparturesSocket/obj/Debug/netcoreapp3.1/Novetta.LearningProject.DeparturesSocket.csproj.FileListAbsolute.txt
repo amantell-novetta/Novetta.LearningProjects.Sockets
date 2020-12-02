@@ -20,3 +20,4 @@ C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.DeparturesSo
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.DeparturesSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.DeparturesSocket.dll
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.DeparturesSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.DeparturesSocket.pdb
 C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.DeparturesSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.DeparturesSocket.genruntimeconfig.cache
+C:\Projects\Novetta.LearningProject.Sockets\Novetta.LearningProject.DeparturesSocket\obj\Debug\netcoreapp3.1\Novetta.LearningProject.DeparturesSocket.csprojAssemblyReference.cache
